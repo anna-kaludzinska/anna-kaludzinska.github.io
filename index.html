@@ -8,27 +8,46 @@
     <form action="https://formspree.io/anna.kaludzinska@gmail.com"
       method="POST">
        
-        <label for="fname">First name: </label> <br />
+        <label for="fname">Imię:</label> <br />
         <input type="text" name="fname" id="fname"> <br />
         
-        <label for="lname">Last name: </label> <br />
+        <label for="lname">Nazwisko:</label> <br />
         <input type="text" name="lname" id="lname"> <br />
         
-        <label for="tel">Telephone:</label> <br />
+        <label for="email">Adres e-mail:</label> <br />
+        <input type="email" name="email" id="email"> <br />
+        
+        <label for="tel">Telefon:</label> <br />
         <input type="tel" id="tel" name="tel"> <br />
         
-        <label for="mess">Wiadomość:</label> <br />
-        <textarea name="mess" id="mess" cols="30" rows="10" maxlength="1000"></textarea> <br />
+        <p>
+            <label for="miasto">Miasto:</label>
+            <select name="miasto" id="miasto">
+                <option value="krakow">Kraków</option>
+                <option value="warszawa">Warszawa</option>
+                <option value="gdansk">Gdańsk</option>
+            </select> <br />
+        </p>
         
-        <select name="miasto" id="miasto">
-            <option value="krakow">Kraków</option>
-            <option value="warszawa">Warszawa</option>
-        </select>
-        <input type="checkbox" id="zgoda">
-        <label for="zgoda">Zgoda</label>
+        <p>
+           Płeć:
+            <input type="radio" name="plec" id="kobieta">
+            <label for="kobieta">Kobieta</label>
+            <input type="radio" name="plec" id="mezczyzna">
+            <label for="mezczyzna">Mężczyzna</label>
+            <input type="radio" name="plec" id="inna">
+            <label for="inna">Inna</label>
+        </p>
         
-         <input type="radio" id="kobieta">
-        <label for="kobieta">Kobieta</label>
+        <p>
+            <input type="checkbox" id="zgoda">
+            <label for="zgoda">Zgoda na przetwarzanie danych osobowych</label> <br />
+        </p>
+        
+        <p>                            
+            <label for="mess">Wiadomość:</label> <br />
+            <textarea name="mess" id="mess" cols="30" rows="10" maxlength="1000"></textarea> <br />
+        </p>
         
         <input type="submit" value="Submit">
 </form>
