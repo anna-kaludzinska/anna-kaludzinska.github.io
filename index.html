@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
     <form action="https://formspree.io/anna.kaludzinska@gmail.com"
       method="POST">
        
-        <label for="fname">Imię:</label> <br />
-        <input type="text" name="fname" id="fname"> <br />
+        <label for="imie">Imię:</label> <br />
+        <input type="text" name="Imię" id="imie"> <br />
         
-        <label for="lname">Nazwisko:</label> <br />
-        <input type="text" name="lname" id="lname"> <br />
+        <label for="nazwisko">Nazwisko:</label> <br />
+        <input type="text" name="Nazwisko" id="nazwisko"> <br />
         
         <label for="email">Adres e-mail:</label> <br />
-        <input type="email" name="email" id="email"> <br />
+        <input type="email" name="E-mail" id="email"> <br />
         
         <label for="tel">Telefon:</label> <br />
-        <input type="tel" id="tel" name="tel"> <br />
+        <input type="tel" id="tel" name="Telefon"> <br />
         
         <p>
             <label for="miasto">Miasto:</label>
-            <select name="miasto" id="miasto">
-                <option value="krakow">Kraków</option>
-                <option value="warszawa">Warszawa</option>
-                <option value="gdansk">Gdańsk</option>
+            <select name="Miasto" id="miasto">
+                <option value="Kraków">Kraków</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Gdańsk">Gdańsk</option>
             </select> <br />
         </p>
         
         <p>
            Płeć:
-            <input type="radio" name="plec" id="kobieta">
+            <input type="radio" name="Płeć" id="kobieta" value="Kobieta">
             <label for="kobieta">Kobieta</label>
-            <input type="radio" name="plec" id="mezczyzna">
+            <input type="radio" name="Płeć" id="mezczyzna" value="Mężczyzna">
             <label for="mezczyzna">Mężczyzna</label>
-            <input type="radio" name="plec" id="inna">
+            <input type="radio" name="Płeć" id="inna" value="Inna">
             <label for="inna">Inna</label>
         </p>
         
         <p>
-            <input type="checkbox" id="zgoda">
+            <input type="checkbox" id="zgoda" value="Zgoda wyrażona" name="Zgoda">
             <label for="zgoda">Zgoda na przetwarzanie danych osobowych</label> <br />
         </p>
         
         <p>                            
             <label for="mess">Wiadomość:</label> <br />
-            <textarea name="mess" id="mess" cols="30" rows="10" maxlength="1000"></textarea> <br />
+            <textarea name="Wiadomość" id="mess" cols="30" rows="10" maxlength="1000"></textarea> <br />
         </p>
         
         <input type="submit" value="Submit">
